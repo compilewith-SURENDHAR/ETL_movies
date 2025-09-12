@@ -57,7 +57,7 @@ def save_df(df, path):
     df.to_csv(path, index=False)
     
 # ---------- Main ----------
-if __name__ == "__main__":
+def transform():
     # Ratings
     df_ratings = extract_ratings()
     df_ratings_cleaned = clean_ratings(df_ratings)

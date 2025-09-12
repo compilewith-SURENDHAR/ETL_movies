@@ -1,33 +1,6 @@
 import csv
 import os
 
-# #creating the genre hash map
-# def genre_mapping(path=r".\Data\raw\u.genre"):
-#     genre_map = {}
-    
-#     with open(path, 'r') as f :
-#         for line in f:
-#             if line.strip():
-#                 x = line.strip().split('|')
-#                 genre_map[int(x[1])] = x[0]
-#     print(genre_map)
-#     return genre_map
-
-# #parse the item file and create a movies.csv file
-# def create_movies_file():
-#     genre_map = genre_mapping()
-#     #items column names
-#     columns = ['movie_id', 'title', 'release_date', 'video_release_date', 'IMDb_URL']
-#     genre_cols = []
-#     for i in range(len(genre_map)):
-#         genre_cols[i] = genre_map[i]
-    
-#     columns.extend(genre_cols)
-    
-#     return columns
-
-# x = create_movies_file()
-# print(x)
     
 def genre_list_creator(file='Data/raw/u.genre'):
     genre_list = []
@@ -68,6 +41,3 @@ def extract_data_file(input_path='./Data/raw/u.data', output_path='./Data/extrac
         for line in infile:
             writer.writerow(line.strip().split('\t'))
 
-extract_genre_file()            
-extract_item_file()
-extract_data_file()
