@@ -14,6 +14,7 @@ This project demonstrates how to connect **Python (Pandas)** with a **MySQL data
 
 ## 📂 Project Structure
 
+"
 project-folder/
 │── data/ 
 │── ETL/
@@ -25,3 +26,4 @@ project-folder/
 │── .env 
 │── .gitignore 
 │── README.md 
+"
