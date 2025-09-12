@@ -17,9 +17,9 @@ This project demonstrates how to connect **Python (Pandas)** with a **MySQL data
 project-folder/
 │── data/ 
 │── ETL/
-  │──extract.py
-  │──transform.py
-  │──load.py
+|  │──extract.py
+|  │──transform.py
+|  │──load.py
 │── main.py 
 │── requirements.txt 
 │── .env 
